@@ -183,7 +183,6 @@ public class ViewAgregarMateria extends javax.swing.JInternalFrame {
 
             Materia materia = new Materia(codigoMateria, nombreMateria, añoMateria);
             if (lMaterias.add(materia)) {
-                lMaterias.add(materia);
                 JOptionPane.showMessageDialog(this, "Materia añadida con exito");
             } else {
                 JOptionPane.showMessageDialog(this, "La Materia ya existe");

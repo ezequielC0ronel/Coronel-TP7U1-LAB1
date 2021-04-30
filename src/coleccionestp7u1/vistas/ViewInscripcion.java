@@ -50,6 +50,12 @@ public class ViewInscripcion extends javax.swing.JInternalFrame {
         jLabel3.setForeground(new java.awt.Color(0, 204, 255));
         jLabel3.setText("ELIJA UN ALUMNO:");
 
+        jcbAlumno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcbAlumnoActionPerformed(evt);
+            }
+        });
+
         jbInscribir.setText("Inscribir");
         jbInscribir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,9 +84,8 @@ public class ViewInscripcion extends javax.swing.JInternalFrame {
                         .addGap(27, 27, 27)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jcbAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jcbMateria, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))))
+                            .addComponent(jcbMateria, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(31, 31, 31)))
@@ -126,6 +131,10 @@ public class ViewInscripcion extends javax.swing.JInternalFrame {
         alumnoSeleccionado.agregarMateria(materiaSeleccionada);
         
     }//GEN-LAST:event_jbInscribirActionPerformed
+
+    private void jcbAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbAlumnoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jcbAlumnoActionPerformed
 
     
     private void cargaComboMaterias(){

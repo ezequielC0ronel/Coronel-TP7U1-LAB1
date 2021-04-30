@@ -6,6 +6,7 @@
 package coleccionestp7u1.entidades;
 
 import java.util.HashSet;
+import java.util.Objects;
 import javax.swing.JOptionPane;
 
 /**
@@ -89,6 +90,13 @@ public class Alumno {
         }
         return true;
     }
+
     
+
+    
+    
+
+    
+
     
 }

@@ -148,8 +148,12 @@ public class ViewAltaAlumnos extends javax.swing.JInternalFrame {
 
             Alumno alumno = new Alumno(legajo, apellido, nombre);
             
-            lAlumnos.add(alumno);
-            JOptionPane.showMessageDialog(this, "El alumno ha sido agregado");
+            if(lAlumnos.add(alumno)){
+                JOptionPane.showMessageDialog(this, "El alumno ha sido agregado");
+            }else{
+                JOptionPane.showMessageDialog(this, "El alumno ya esta inscripto");
+            }
+            
 
         } catch (NumberFormatException nfe) {
             JOptionPane.showMessageDialog(this, "Legajo ingresado no valido");
